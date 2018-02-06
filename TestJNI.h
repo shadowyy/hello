@@ -9,11 +9,19 @@ extern "C" {
 #endif
 /*
  * Class:     com_shadowyy_jni_TestJNI
- * Method:    hello
+ * Method:    beep
  * Signature: (II)V
  */
-JNIEXPORT void JNICALL Java_com_shadowyy_jni_TestJNI_hello
-        (JNIEnv *, jclass, jint, jint);
+JNIEXPORT void JNICALL Java_com_shadowyy_jni_TestJNI_beep
+(JNIEnv *, jclass, jint, jint);
+
+/*
+ * Class:     com_shadowyy_jni_TestJNI
+ * Method:    sleep
+ * Signature: (I)V
+ */
+JNIEXPORT void JNICALL Java_com_shadowyy_jni_TestJNI_sleep
+(JNIEnv *, jclass, jint);
 
 #ifdef __cplusplus
 }
